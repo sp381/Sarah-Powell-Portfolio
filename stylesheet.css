@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(55, 55, 114);
+} 
+
+body {
+    color: rgb(199, 140, 170);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+/*Header Styles Start*/
+
+header {
+background-image: url("./starry-night.jfif");
+background-size: cover;
+background-position: center right;
+font-weight: bold;
+color: rgb(199, 140, 170);
+}
+
+header h1 {
+font-family: dancing script;
+font-style:italic;
+margin: 0;
+font-size: 40px;
+text-align: left;
+}
+
+header h2 {
+text-align: left;
+font-size: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: rgb(199, 140, 170);
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: right;  align-items: right;
+    background-position: center, right;
+    list-style: none;
+}
+
+header nav ul li a {
+flex-direction: column;
+display: block;
+justify-content: space-between;
+}
+
+.section {
+
+}
+
+footer {
+    text-align: center;
+    color: rgb(199, 140, 170);
+    font-weight: lighter;
+    font-style: italic;
+}
