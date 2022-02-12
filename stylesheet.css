@@ -1,66 +1,75 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: rgb(55, 55, 114);
-} 
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
 
 body {
-    color: rgb(199, 140, 170);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
 }
-
-/*Header Styles Start*/
-
-header {
-background-image: url("./starry-night.jfif");
-background-size: cover;
-background-position: center right;
-font-weight: bold;
-color: rgb(199, 140, 170);
-}
-
-header h1 {
-font-family: dancing script;
-font-style:italic;
-margin: 0;
-font-size: 40px;
-text-align: left;
-}
-
-header h2 {
-text-align: left;
-font-size: 20px;
-}
-
-header a {
-    text-decoration: none;
-    color: rgb(199, 140, 170);
-}
-
-header nav ul {
+/* STARTING HEADER */
+.header {
+    padding: 15px;
+    background-color: rgb(90,107,135);  
+    color:rgb(145,203,205); 
+    justify-content: space-between;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: right;  align-items: right;
-    background-position: center, right;
+    background-size: cover;
+}
+
+.header h1 {
+    display: -webkit-inline-flex;
+    font-size: xx-large;
+    color: rgb(145,203,205);
+}
+
+.header nav ul { 
     list-style: none;
 }
 
-header nav ul li a {
-flex-direction: column;
-display: block;
-justify-content: space-between;
+.header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
 }
 
-.section {
-
+a {
+    color: rgb(145,203,205);
+    text-decoration: none;
+    font-family: cursive;
+    font-weight: bolder;
+    float: left;
+    padding: 0;
 }
 
-footer {
-    text-align: center;
-    color: rgb(199, 140, 170);
-    font-weight: lighter;
-    font-style: italic;
+.header nav ul li 
+
+.hero {
+height: 200px;
+width: 100%;
+background-image: url("../Sarah-Powell-Portfolio/nature.jfif");
+background-position: center;
+background-size: cover;
+}
+
+/* .headshot {
+    height: 100px;
+    width: 100%;
+    object-fit: contain;
+    background-image: url("../Sarah-Powell-Portfolio/portfolio-headshot.jpg");
+} */
+
+section {
+    display: flex;
+    flex-direction: row;
+}
+
+section h2 {
+    flex-basis: 20%;
+    text-align: right;
+    padding-right: 2%;
+    border-right: 2px solid black;
+}
+
+section div {
+    flex-basis: 80%;
 }
