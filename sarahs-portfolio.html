@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,122 +9,125 @@
     </head>
 
     <body>
-            <!-- navigation -->
-            <header class="header">
-                <h1>
-                    <a href="/">
-                        Sarah Powell
-                    </a>
-                </h1>
-                <nav>
-                    <!-- Unordered list element -->
+        <!-- Header and navigation starts -->
+        <header class="header">
+            <h1>
+                <a href="/">
+                    Sarah Powell
+                </a>
+            </h1>
+            <nav>
+                <!-- List element -->
+                <ul>
+                    <li>
+                        <!-- Anchor element -->
+                        <a href="#about-me">About Me</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- end of header and navigation section -->
+
+        <!-- hero starts-->
+        <div class="hero"></div>
+        <h2>Junior Web Developer</h2>
+        <div class="headshot"></div>
+        <!-- hero ends-->
+
+        <!-- start main section - About Me -->
+        <main>
+            <section id="about-me" class="main"> 
+                <h2 class="main-title">About Me</h2>
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere dolorem dolor accusamus, minima unde aperiam quas porro neque tenetur in ipsa voluptates doloribus soluta voluptatem dolore odit laboriosam hic? Mollitia!
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere dolorem dolor accusamus, minima unde aperiam quas porro neque tenetur in ipsa voluptates doloribus soluta voluptatem dolore odit laboriosam hic? Mollitia!
+                    </p>
+                </div>
+            </section>
+            <!-- end About Me section -->
+
+            <!-- start works section -->
+            <section id="works" class="main">
+                <div class="marker">
+                    <h2 class="main-title">Works</h2>
+                </div>
+
+                <div class="flex-container">
+                    <a class="flex-img run-buddy"></a>
+                        <img src="./surf-report.jpg" alt="surfing">
+                    <div class="work-text">
+                        <h4>Surf Report</h4>
+                        <p>MERN Stack</p>
+                    </div>    
+                </div>
+
+                <div class="flex-container">
+                    <a class="flex-img run-buddy"></a>
+                        <img src="./led-wall.jfif" alt="led wall">
+                    <div class="work-text">
+                        <h4>LED Wall</h4>
+                        <p>Node/IoT</p>
+                    </div>    
+                </div>
+
+
+                <div class="flex-container">
+                    <a class="flex-img run-buddy"></a>
+                        <img src="./calculator.jpg" alt="calculator">
+                    <div class="work-text">
+                        <h4>Calculator</h4>
+                        <p>React/Javascript/CSS</p>
+                    </div>    
+                </div>
+
+                <div class="flex-container">
+                    <a class="flex-img run-buddy"></a>
+                        <img src="./pastel-puzzle.jfif" alt="pastel homes">
+                    <div class="work-text">
+                        <h4>Pastel Puzzles</h4>
+                        <p>MERN Stack</p>
+                    </div>    
+                </div>
+
+                <div class="flex-container">
+                    <a class="flex-img run-buddy"></a>
+                        <img src="./run-buddy-snip-portfolio.PNG" alt="running shoe">
+                    <div class="work-text">
+                        <h4>Run Buddy</h4>
+                        <p>HTML CSS</p>
+                    </div>    
+                </div>
+
+            </section>
+            <!-- end Work section -->
+
+            <!-- start Contact Me section-->
+            <section id="contact-me">
+                <h2 class="main-title">
+                    Contact 
+                </h2>
+                <div>
                     <ul>
-                        <!-- List item element -->
-                        <li>
-                            <!-- Anchor element -->
-                            <a href="#about-me">About Me</a>
-                        </li>
-                        <li>
-                            <a href="#portfolio">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#contact">Contact</a>
-                        </li>
+                        <li><a href="#">(555)123-4567</a></li>
+                        <li><a href="#">email@placeholder.com</a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#">GitHub</a></li>
                     </ul>
-                </nav>
-            </header>
-            <!-- end navigation -->
-            <div class="hero"></div>
-            <div class="headshot"></div>
+                </div>
+            </section>
+            <!-- end Contact Me section -->
+        </main>
 
-            <main>
-                <section>
-                    <h2>
-                        About Me
-                    </h2>
-                    <div>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere dolorem dolor accusamus, minima unde aperiam quas porro neque tenetur in ipsa voluptates doloribus soluta voluptatem dolore odit laboriosam hic? Mollitia!
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere dolorem dolor accusamus, minima unde aperiam quas porro neque tenetur in ipsa voluptates doloribus soluta voluptatem dolore odit laboriosam hic? Mollitia!
-                        </p>
-                    </div>
-                </section>
-
-                <section>
-                    <h2>
-                        Works
-                    </h2>
-                    <div class="flex-container">
-                        <a class="flex-img run-buddy" >
-                        <div>
-                            <h4>
-                                Run Buddy
-                            </h4>
-                            <div>
-                                HTML CSS
-                            </div>
-                        </div>    
-                        </a>
-                        <a class="flex-img run-buddy" >
-                        <div>
-                            <h4>
-                                Run Buddy
-                            </h4>
-                            <div>
-                                HTML CSS
-                            </div>
-                        </div>    
-                        </a>
-                        <a class="flex-img horisean" >
-                        <div>
-                            <h4>
-                                Horisean
-                            </h4>
-                            <div>
-                                HTML CSS
-                            </div>
-                        </div>    
-                        </a>
-                        <a class="flex-img run-buddy" >
-                        <div>
-                            <h4>
-                                Run Buddy
-                            </h4>
-                            <div>
-                                HTML CSS
-                            </div>
-                        </div>    
-                        </a>
-                        <a class="flex-img run-buddy" >
-                        <div>
-                            <h4>
-                                Run Buddy
-                            </h4>
-                            <div>
-                                HTML CSS
-                            </div>
-                        </div>    
-                        </a>
-                    </div>
-                </section>
-
-                <section>
-                    <h2>
-                        Contact
-                    </h2>
-                    <div>
-
-                    </div>
-                </section>
-            </main>
-        <!-- <section class="hero">
-            <h2>Junior Web Developer</h2>
-        </section>
-
-        <footer>
-            
-        </footer>
+        <footer></footer>
     </body>
+
 </html>
