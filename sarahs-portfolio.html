@@ -13,7 +13,8 @@
         <header class="header">
             <h1>
                 <a href="/">
-                    Sarah Powell
+                    <p>Sarah Powell</p>
+                    <h2><p>Web Developer</p></h2>
                 </a>
             </h1>
             <nav>
@@ -24,10 +25,10 @@
                         <a href="#about-me">About Me</a>
                     </li>
                     <li>
-                        <a href="#portfolio">Portfolio</a>
+                        <a href="#works">Works</a>
                     </li>
                     <li>
-                        <a href="#contact">Contact</a>
+                        <a href="#contact-me">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -36,18 +37,53 @@
 
         <!-- hero starts-->
         <div class="hero"></div>
-        <h2>Junior Web Developer</h2>
-        <div class="headshot"></div>
         <!-- hero ends-->
 
-        <!-- start main section - About Me -->
+            <!-- start works section -->
+        <section id="works" class="section">
+            <h2 class="main-title">Works</h2>
+
+                <div class="work-list">
+                    <ul>
+                        <li class="surf">
+                            <a href="https://www.istockphoto.com/photo/surfers-waiting-in-the-ocean-for-a-wave-gm1319722317-406503577?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fsurf&utm_term=surf%3A%3A%3A" target="_blank">
+                                <img id="surfing" src="./surf-report.jpg" alt="surfing">
+                                <h4>Surf Report / MERN Stack</h4>
+                            </a>
+                        </li>
+
+                        <li class="horiseon">
+                            <a href="https://sp381.github.io/code-refactor-challenge/" target="_blank">
+                                <img src="./horisean.PNG" alt="two people">
+                                <h4>Horisean / Node/IoT</h4>
+                            </a> 
+                        </li>
+
+                        <li class="calculator">
+                            <a href="https://www.istockphoto.com/photo/one-young-man-doing-his-home-finances-in-the-dining-room-gm1295041068-388869411?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fcalculator&utm_term=calculator%3A%3A%3A" target="_blank">
+                                <img src="./calculator.jpg" alt="calculator">
+                                <h4>Calculator / React/Javascript/CSS</h4>
+                            </a>
+                        </li>
+
+                        <li class="run-buddy">
+                            <a href="https://lernantino.github.io/run-buddy/" target="_blank">
+                                <img src="./run-buddy-snip-portfolio.PNG" alt="running shoe">
+                                <h4>Run Buddy / HTML CSS</h4>
+                                
+                            </a>
+                        </li>
+                    </ul> 
+                </div>   
+        </section>
+            <!-- end Work section -->
+
+            <!-- start main section - About Me -->
         <main>
             <section id="about-me" class="main"> 
+                <!-- <div class="headshot"></div> --> 
                 <h2 class="main-title">About Me</h2>
-                <div>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere dolorem dolor accusamus, minima unde aperiam quas porro neque tenetur in ipsa voluptates doloribus soluta voluptatem dolore odit laboriosam hic? Mollitia!
-                    </p>
+                <div class="AboutMeText">
                     <p>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere dolorem dolor accusamus, minima unde aperiam quas porro neque tenetur in ipsa voluptates doloribus soluta voluptatem dolore odit laboriosam hic? Mollitia!
                     </p>
@@ -55,71 +91,13 @@
             </section>
             <!-- end About Me section -->
 
-            <!-- start works section -->
-            <section id="works" class="main">
-                <div class="marker">
-                    <h2 class="main-title">Works</h2>
-                </div>
-
-                <div class="flex-container">
-                    <a class="flex-img run-buddy"></a>
-                        <img src="./surf-report.jpg" alt="surfing">
-                    <div class="work-text">
-                        <h4>Surf Report</h4>
-                        <p>MERN Stack</p>
-                    </div>    
-                </div>
-
-                <div class="flex-container">
-                    <a class="flex-img run-buddy"></a>
-                        <img src="./led-wall.jfif" alt="led wall">
-                    <div class="work-text">
-                        <h4>LED Wall</h4>
-                        <p>Node/IoT</p>
-                    </div>    
-                </div>
-
-
-                <div class="flex-container">
-                    <a class="flex-img run-buddy"></a>
-                        <img src="./calculator.jpg" alt="calculator">
-                    <div class="work-text">
-                        <h4>Calculator</h4>
-                        <p>React/Javascript/CSS</p>
-                    </div>    
-                </div>
-
-                <div class="flex-container">
-                    <a class="flex-img run-buddy"></a>
-                        <img src="./pastel-puzzle.jfif" alt="pastel homes">
-                    <div class="work-text">
-                        <h4>Pastel Puzzles</h4>
-                        <p>MERN Stack</p>
-                    </div>    
-                </div>
-
-                <div class="flex-container">
-                    <a class="flex-img run-buddy"></a>
-                        <img src="./run-buddy-snip-portfolio.PNG" alt="running shoe">
-                    <div class="work-text">
-                        <h4>Run Buddy</h4>
-                        <p>HTML CSS</p>
-                    </div>    
-                </div>
-
-            </section>
-            <!-- end Work section -->
-
             <!-- start Contact Me section-->
-            <section id="contact-me">
-                <h2 class="main-title">
-                    Contact 
-                </h2>
+            <section id="contact-me" class="list">
+                <h2 class="main-title">Contact</h2>
                 <div>
                     <ul>
                         <li><a href="#">(555)123-4567</a></li>
                         <li><a href="#">email@placeholder.com</a></li>
-                        <li><a href="#"></a></li>
                         <li><a href="#">GitHub</a></li>
                     </ul>
                 </div>
