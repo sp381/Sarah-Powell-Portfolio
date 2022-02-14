@@ -202,15 +202,17 @@ justify-content: flex-start;
     display: flex;
     flex-wrap: wrap;
     padding-left: 10%;
+    font-size: large;
 
 }
 .list ul {
     list-style: none;
     width: 100%;
     align-items: center;
+    flex-direction: row;
 }
 .list ul li a {
-    font-size: 24px;
+    font-size: 20px;
     color: var(--secondary-color);
 }
 .list ul li {
