@@ -144,15 +144,13 @@ flex-direction: column;
     list-style-type: none;
 }
 
-.surf h4 {
-display: flex;
-text-align: right;    
+.surf h4 {    
 color: rgb(227,210,192);
-justify-content: flex-start;
 }
 
 #surfing {
     width: 300%;
+    image-rendering: auto;
 }
 
 .horiseon h4 {
