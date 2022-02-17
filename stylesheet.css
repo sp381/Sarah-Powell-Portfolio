@@ -1,0 +1,342 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+:root {
+    --primary: rgb(57,58,26);
+    --secondary-color:rgb(227,210,192);
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: var(--primary);
+}
+/* STARTING HEADER */
+.header {
+    height: 200px;
+    width: 100%;
+    padding: 0 auto auto 0;
+    background-image: url("../Sarah-Powell-Portfolio/nature.jfif");
+    background-position: center;  
+    color:var(--secondary-color); 
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    background-size: cover;
+}
+
+.header h1 a {
+    margin-top: 5%;
+    margin-left: 3%;
+    text-decoration: none;
+    text-align: right;
+    font-size: xx-large;
+    padding: 15px;
+    color:var(--secondary-color);
+}
+
+.header h2 {
+    font-size: large;
+}
+
+.header nav ul { 
+    align-items: center;
+    list-style: none;
+    text-decoration: underline;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.header nav ul li {
+    margin-left: 25px;
+    padding: 15px 6px 0 15px;
+}
+
+.header nav ul li a {
+    color: var(--secondary-color);
+    text-decoration: underline;
+    font-family: cursive;
+    font-weight: bolder;
+    float: left;
+    padding: 0;
+    border-bottom: var(--secondary-color) solid 2%;
+}
+
+.header nav ul li a {
+    border-bottom: none;
+}
+/* END of HEADER STLYES */
+
+.hero h2 {
+background-color: var(--primary-color);
+color: var(--secondary-color);
+font-weight: lighter;
+font-style: italic;
+padding-bottom: 5px;
+}
+
+section {
+    width: 48%;
+    height: 40%;
+    margin: 1%;
+    border: var(--primary-color) solid 5px;
+    margin-bottom: 20px;
+    padding: 50px;
+    color: rgb(227,210,192);
+
+}
+
+.section:hover {
+    cursor: pointer;
+}
+
+section h2 {
+    flex-basis: 20%;
+    font-size: 35px;
+    text-align: right;
+    padding-right: 2%;
+    border-right: 2x solid rgb(18, 61, 18);
+}
+
+*.section img {
+    align-items: center;
+    display: flex;
+    transform: translateX();
+    border-bottom: 5px;
+    height: 180px;
+    justify-content: space-between;
+    object-fit: cover;
+    width: 180%;
+    left: 50%;
+    filter: brightness(0.7);
+    padding-left: 30%;
+    object-fit: cover;
+}
+
+.section h4 {
+    padding: 0 auto auto 0;
+}
+
+.section img:hover {
+    filter: none;
+}
+
+section div {
+    flex-basis: 80%;
+    padding: 30px 30px 30px;
+    display: flex;
+    margin-left: 50px;
+}
+
+.work-list ul li {
+display: flex;
+flex-direction: column;
+}
+
+.work-list ul li a {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.work2 {
+    list-style-type: none;
+}
+
+.surf h4 {    
+color: rgb(227,210,192);
+}
+
+#surfing {
+    width: 300%;
+    image-rendering: auto;
+}
+
+.horiseon h4 {
+    color: rgb(227,210,192);
+}
+
+.calculator h4 {
+    color: rgb(227,210,192);
+}
+
+.run-buddy h4 {
+    color: rgb(227,210,192);
+}
+
+.main-title {
+    border-right: rgb(227,210,192) solid 5px;
+    text-align: right;
+    font-size: 2.5em;
+    padding-right: 2%;
+    font-weight: lighter;   
+    color: rgb(227,210,192);
+    float: left;
+}
+
+.main {
+    border-right: var(rgb(227,210,192) solid 5px);
+    text-align: left;
+    flex-flow: row;
+    font-size: medium;
+    padding-right: 2%;
+    font-weight: lighter;   
+}
+
+.text {
+    color: rgb(227,210,192);
+    padding: 1%;
+    margin-left: -1px;
+    margin-top: 5%;
+    justify-content: flex-start;
+    width: auto;
+    position: absolute;
+    padding:0px;
+} 
+
+.sarah-head {
+    width: 180px;
+    height: 210px;
+    display: inline-block;
+    margin-top: auto;
+    padding: auto 0 0 auto;
+}
+
+.AboutMeText {
+    color: rgb(227,210,192);
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10%;
+    font-size: large;
+
+}
+.list ul {
+    list-style: none;
+    width: 100%;
+    align-items: center;
+    flex-direction: row;
+}
+.list ul li a {
+    font-size: 20px;
+    color: var(--secondary-color);
+}
+.list ul li {
+    border-bottom: 5px;
+    list-style: none;
+    padding-left: 10%;
+    display: flex;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media only screen and (min-width: 980px) {
+
+    header {
+        flex-direction: row;
+    }
+
+    header h1  {
+      /* this will be applied on any screen smaller than 980px */
+      width: auto;
+    }
+
+}
+header nav ul {
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+header nav ul li a {
+    border-bottom: none;
+}
+
+.section img {
+    display: flex;
+    flex-basis: auto;
+    }
+
+    .AboutMeText {
+        display: flex;
+        flex-basis: auto;
+    }
+
+    .list {
+        display:flex;
+        flex-basis: auto;
+    }
+
+  
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media only screen and (min-width: 768px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    header h1  {
+      /* this will be applied on any screen smaller than 980px */
+      width: auto;
+    }
+
+}
+header nav ul {
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+header nav ul li a {
+    border-bottom: none;
+}    
+
+.section img {
+    display: flex;
+    flex-basis: auto;
+    }
+
+    .AboutMeText {
+        display: flex;
+        flex-basis: auto;
+    }
+
+    .list {
+        display:flex;
+        flex-basis: auto;
+    }
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media only screen and (min-width: 575px) {
+    header {
+        flex-direction: column;
+    }
+
+    header h1  {
+      /* this will be applied on any screen smaller than 980px */
+      width: auto;
+    }
+
+    header nav ul {
+        align-items: center;
+        flex-direction: column;
+        margin-top: 5%;
+    }
+
+    header nav ul li a {
+        border-bottom: none;  
+  }
+  .section img {
+    display: flex;
+    flex-basis: auto;
+    }
+
+    .AboutMeText {
+        display: flex;
+        flex-basis: auto;
+    }
+
+    .list {
+        display:flex;
+        flex-basis: auto;
+    }
+  }
